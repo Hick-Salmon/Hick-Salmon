@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hicksalmon.gitee.io/feelings/"/>
-  <updated>2019-04-16T02:56:06.470Z</updated>
+  <updated>2019-04-16T04:44:15.077Z</updated>
   <id>http://hicksalmon.gitee.io/feelings/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>梦</title>
     <link href="http://hicksalmon.gitee.io/feelings/2019/04/16/%E6%A2%A6%EF%BC%9F/"/>
     <id>http://hicksalmon.gitee.io/feelings/2019/04/16/梦？/</id>
     <published>2019-04-16T02:56:06.319Z</published>
-    <updated>2019-04-16T02:56:06.470Z</updated>
+    <updated>2019-04-16T04:44:15.077Z</updated>
     
     <content type="html"><![CDATA[<p><strong>昨日</strong>     一梦惊醒睡中人，我是真睡是假睡？</p>]]></content>
     
@@ -35,6 +35,10 @@
     
     </summary>
     
+      <category term="心情" scheme="http://hicksalmon.gitee.io/feelings/categories/%E5%BF%83%E6%83%85/"/>
+    
+    
+      <category term="随记" scheme="http://hicksalmon.gitee.io/feelings/tags/%E9%9A%8F%E8%AE%B0/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-04-17T00:56:39.732Z</updated>
+  <updated>2019-04-20T03:58:28.015Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序员修炼之路</title>
+    <link href="https://hicksalmon.gitee.io/2019/04/20/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"/>
+    <id>https://hicksalmon.gitee.io/2019/04/20/程序员修炼之路/</id>
+    <published>2019-04-20T03:58:27.864Z</published>
+    <updated>2019-04-20T03:58:28.015Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="程序员修炼之路"><a href="#程序员修炼之路" class="headerlink" title="程序员修炼之路"></a>程序员修炼之路</h2><hr><p><a href="https://github.com/Snailclimb/programmer-advancement" target="_blank" rel="noopener">https://github.com/Snailclimb/programmer-advancement</a></p><hr><blockquote><p><strong>修炼：</strong>和优秀的人一起久了，也会变得优秀。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;程序员修炼之路&quot;&gt;&lt;a href=&quot;#程序员修炼之路&quot; class=&quot;headerlink&quot; title=&quot;程序员修炼之路&quot;&gt;&lt;/a&gt;程序员修炼之路&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Snailclimb/progra
+      
+    
+    </summary>
+    
+      <category term="资源" scheme="https://hicksalmon.gitee.io/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+      <category term="资源" scheme="https://hicksalmon.gitee.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>计划清单</title>

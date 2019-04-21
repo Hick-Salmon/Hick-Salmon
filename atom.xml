@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-04-20T03:58:28.015Z</updated>
+  <updated>2019-04-21T14:05:37.591Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer 树的子结构</title>
+    <link href="https://hicksalmon.gitee.io/2019/04/21/%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84/"/>
+    <id>https://hicksalmon.gitee.io/2019/04/21/树的子结构/</id>
+    <published>2019-04-21T14:05:37.421Z</published>
+    <updated>2019-04-21T14:05:37.591Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="树的子结构"><a href="#树的子结构" class="headerlink" title="树的子结构"></a>树的子结构</h2><hr><p>###题目描述<br>输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">public class TreeNode &#123;</span><br><span class="line">    int val = <span class="number">0</span>;</span><br><span class="line">    TreeNode left = null;</span><br><span class="line">    TreeNode right = null;</span><br><span class="line"></span><br><span class="line">    public TreeNode(int val) &#123;</span><br><span class="line">        this.val = val;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">*/</span><br><span class="line">public class Solution &#123;</span><br><span class="line">    public boolean HasSubtree(TreeNode root1,TreeNode root2) &#123;</span><br><span class="line">        boolean result = false;</span><br><span class="line">//只有当两棵树都不为空才进行比较，否则返回false</span><br><span class="line">        <span class="keyword">if</span>(root1 != null &amp;&amp; root2 != null)&#123;</span><br><span class="line">//如果当前节点值相等，我们则继续进行从当前节点的比较</span><br><span class="line">            <span class="keyword">if</span>(root1.val == root2.val)&#123;</span><br><span class="line">                result = isHaveRootB(root1,root2);</span><br><span class="line">            &#125;</span><br><span class="line">//如果当前节点不相等，我们继续比较root2是不是左子树的子树</span><br><span class="line">            <span class="keyword">if</span>(!result)&#123;</span><br><span class="line">                result = HasSubtree(root1.left,root2);</span><br><span class="line">            &#125;</span><br><span class="line">//如果当前节点不相等，我们继续比较root2是不是右子树的子树</span><br><span class="line">            <span class="keyword">if</span>(!result)&#123;</span><br><span class="line">                result = HasSubtree(root1.right,root2);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public static boolean isHaveRootB(TreeNode node1,TreeNode node2)&#123;</span><br><span class="line">//如果子树已经遍历到最后，则前面都相等，此时说明是子树，返回true</span><br><span class="line">        <span class="keyword">if</span>(node2 == null)&#123;</span><br><span class="line">            <span class="keyword">return</span> true;</span><br><span class="line">        &#125;</span><br><span class="line">//如果node1已经遍历完，说明没找到，此时返回false</span><br><span class="line">        <span class="keyword">if</span>(node1 == null)&#123;</span><br><span class="line">            <span class="keyword">return</span> false;</span><br><span class="line">        &#125;</span><br><span class="line">//如果两个值不相等，说明不是的，直接返回false</span><br><span class="line">        <span class="keyword">if</span>(node1.val != node2.val)&#123;</span><br><span class="line">            <span class="keyword">return</span> false;</span><br><span class="line">        &#125;</span><br><span class="line">//如果当前节点的值相等，则我们继续比较他们的左子树和右子树是不是相等</span><br><span class="line">        <span class="keyword">return</span> isHaveRootB(node1.left,node2.left) &amp;&amp; isHaveRootB(node1.right,node2.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><hr><blockquote><p><strong>修炼：</strong>每一次做题都不会辜负自己。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;树的子结构&quot;&gt;&lt;a href=&quot;#树的子结构&quot; class=&quot;headerlink&quot; title=&quot;树的子结构&quot;&gt;&lt;/a&gt;树的子结构&lt;/h2&gt;&lt;hr&gt;
+&lt;p&gt;###题目描述&lt;br&gt;输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子
+      
+    
+    </summary>
+    
+      <category term="刷题" scheme="https://hicksalmon.gitee.io/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="剑指offer" scheme="https://hicksalmon.gitee.io/tags/%E5%89%91%E6%8C%87offer/"/>
+    
+  </entry>
   
   <entry>
     <title>程序员修炼之路</title>

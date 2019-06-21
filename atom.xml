@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-05-07T14:18:43.634Z</updated>
+  <updated>2019-06-21T13:51:05.647Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://hicksalmon.gitee.io/2019/06/21/Jenkins%E5%AD%A6%E4%B9%A0--%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9D%91%E7%82%B9/"/>
+    <id>https://hicksalmon.gitee.io/2019/06/21/Jenkins学习--虚拟机坑点/</id>
+    <published>2019-06-21T13:51:40.780Z</published>
+    <updated>2019-06-21T13:51:05.647Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><ol><li><p>title: Jenkins学习–虚拟机坑点</p><p>date: 2019-4-20 11：50：01</p><p>tags: [持续集成]</p><p>categories: CD-CI</p><hr><h2 id="Jenkins学习–虚拟机坑点"><a href="#Jenkins学习–虚拟机坑点" class="headerlink" title="Jenkins学习–虚拟机坑点"></a>Jenkins学习–虚拟机坑点</h2><hr><h4 id="买不起服务器就虚拟机来凑"><a href="#买不起服务器就虚拟机来凑" class="headerlink" title="买不起服务器就虚拟机来凑"></a>买不起服务器就虚拟机来凑</h4><blockquote><p> VMware Workstation 作为一种在桌面可以运行多种操作系统的虚拟计算机软件，首当其冲的要第一个搞定。这个的安装，我是之前安装好的没有什么记忆了，在此不做什么坑点的记录了。</p></blockquote><h4 id="Ubuntu-系统的安装坑点"><a href="#Ubuntu-系统的安装坑点" class="headerlink" title="Ubuntu 系统的安装坑点"></a>Ubuntu 系统的安装坑点</h4><blockquote><ol><li>从官网下载好了Ubuntu 16.04 server iso 镜像，server 镜像地址见 <a href="https://ubuntu.com/download/alternative-downloads" target="_blank" rel="noopener">https://ubuntu.com/download/alternative-downloads</a> ，可自由选择相关的版本；</li><li>在 VM 中进行安装，参照教程（具体操作我已经截图放在总结之后，即最后的截图），源地址： <a href="https://www.cnblogs.com/Alier/p/6337151.html" target="_blank" rel="noopener">https://www.cnblogs.com/Alier/p/6337151.html</a><br>不过这里我下载的是 server ，在这里遇到几个坑点。<br>（1）. 安装过程中语言需要选择英文，否则在后续的安装过程中会出现语言包的问题，或者在安装完成时会出现乱码的问题。这个就很烦，应该有办法解决但是我没深入了解；<br>（2）.默认下载的ubuntu系统镜像源是 us 。所以会出现下载其他东西时很慢的现象，这个可以通过换镜像源的方式进行改进。<br><strong>镜像更改如下操作：</strong><blockquote><p><strong>#利用vim修改镜像源配置</strong><br><strong>vim /etc/apt/sources.list</strong><br><strong>#替换为阿里的镜像源</strong><br><strong>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.aliyun.com/ubuntu/</a> xenial main restricted universe multiverse</strong><br><strong>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.aliyun.com/ubuntu/</a> xenial-security main restricted universe multiverse</strong><br><strong>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.aliyun.com/ubuntu/</a> xenial-updates main restricted universe multiverse</strong><br><strong>deb <a href="http://mirrors.aliyun.com/ubuntu/" target="_blank" rel="noopener">http://mirrors.aliyun.com/ubuntu/</a> xenial-backports main restricted universe multiverse</strong><br><strong>#更新</strong><br><strong>sudo apt-get update</strong></p></blockquote></li></ol></blockquote><blockquote><p>3.我们平时可能用Xshell或者其他的远程连接工具更多，所以我们在这里安装好虚拟机之后一样用远程连接工具进行连接，这个时候往往会出现另一个比较坑的就是，发现用工具连不上，我在这里就出现了，原因是我的ubuntu没有支持 SSH ，所以在这里需要安装 SSH（安装过程不赘述）；<br>4.最后想要记录的是关于系统与虚拟机中如何实现文件共享的，我们可以在系统的某个盘中建立一个共享文件夹，然后在虚拟机中设置为共享文件夹。详情见下图：<br><strong>系统的共享文件夹</strong><br><img src="http://cdn.ruoshuisanqian.site/系统文件夹共享.jpg" alt><br><strong>虚拟机软件设置</strong><br><img src="http://cdn.ruoshuisanqian.site/虚拟机软件设置.jpg" alt><br><strong>命令行查看到的共享文件夹</strong><br><img src="http://cdn.ruoshuisanqian.site/命令行查看共享文件夹.jpg" alt></p></blockquote><p>最后还是把虚拟机的安装过程放出来（可做参考）</p><p><img src="http://cdn.ruoshuisanqian.site/ubuntu安装教程.jpg" alt></p></li></ol><blockquote><p><strong>2019/6/21：</strong>很久没写博客了，水一下。</p></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;title: Jenkins学习–虚拟机坑点&lt;/p&gt;
+&lt;p&gt;date: 2019-4-20 11：50：01&lt;/p&gt;
+&lt;p&gt;tags: [持续集成]&lt;/p&gt;
+&lt;p&gt;categories: CD-CI&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>空虚【百度词条】</title>

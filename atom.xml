@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-06-21T13:55:03.062Z</updated>
+  <updated>2019-04-22T13:10:32.620Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer 二叉树的镜像</title>
+    <link href="https://hicksalmon.gitee.io/2019/06/21/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://hicksalmon.gitee.io/2019/06/21/二叉树的镜像 - 副本/</id>
+    <published>2019-06-21T14:05:08.459Z</published>
+    <updated>2019-04-22T13:10:32.620Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="二叉树的镜像"><a href="#二叉树的镜像" class="headerlink" title="二叉树的镜像"></a>二叉树的镜像</h2><hr><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><hr><p>操作给定的二叉树，将其变换为源二叉树的镜像。</p><hr><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">二叉树的镜像定义：源二叉树 </span><br><span class="line">        <span class="number">8</span></span><br><span class="line">       /  \</span><br><span class="line">      <span class="number">6</span>   <span class="number">10</span></span><br><span class="line">     / \  / \</span><br><span class="line">    <span class="number">5</span>  <span class="number">7</span> <span class="number">9</span> <span class="number">11</span></span><br><span class="line">    镜像二叉树</span><br><span class="line">        <span class="number">8</span></span><br><span class="line">       /  \</span><br><span class="line">      <span class="number">10</span>   <span class="number">6</span></span><br><span class="line">     / \  / \</span><br><span class="line">    <span class="number">11</span> <span class="number">9</span> <span class="number">7</span>  <span class="number">5</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">public class TreeNode &#123;</span><br><span class="line">    int val = <span class="number">0</span>;</span><br><span class="line">    TreeNode left = null;</span><br><span class="line">    TreeNode right = null;</span><br><span class="line"></span><br><span class="line">    public TreeNode(int val) &#123;</span><br><span class="line">        this.val = val;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">*/</span><br><span class="line">public class Solution &#123;</span><br><span class="line">    public void Mirror(TreeNode root) &#123;</span><br><span class="line">        TreeNode tmp = null;</span><br><span class="line">        //当树不为空的时候我们将左子树和右子树交换</span><br><span class="line">        <span class="keyword">if</span>(root != null)&#123;</span><br><span class="line">            tmp = root.left;</span><br><span class="line">            root.left = root.right;</span><br><span class="line">            root.right = tmp;</span><br><span class="line">            //当左子树不为空的时候，继续进行递归</span><br><span class="line">            <span class="keyword">if</span>(root.left != null)&#123;</span><br><span class="line">                Mirror(root.left);</span><br><span class="line">            &#125;</span><br><span class="line">            //当右子树不为空的时候，继续进行递归</span><br><span class="line">            <span class="keyword">if</span>(root.right != null)&#123;</span><br><span class="line">                Mirror(root.right);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><blockquote><p><strong>水水更健康：</strong>今天听说B站的源码被上传到github上了，本人在此声明：从未clone，下载或者以任何途径获得bilibili公司的任何非正常途径公开的代码。也没有参与，传播，任何bilibili的负面信息，且不认识看源码的兄弟。特此声明！划清界限</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;二叉树的镜像&quot;&gt;&lt;a href=&quot;#二叉树的镜像&quot; class=&quot;headerlink&quot; title=&quot;二叉树的镜像&quot;&gt;&lt;/a&gt;二叉树的镜像&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+      <category term="刷题" scheme="https://hicksalmon.gitee.io/categories/%E5%88%B7%E9%A2%98/"/>
+    
+    
+      <category term="剑指offer" scheme="https://hicksalmon.gitee.io/tags/%E5%89%91%E6%8C%87offer/"/>
+    
+  </entry>
   
   <entry>
     <title></title>

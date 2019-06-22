@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-06-22T06:45:50.745Z</updated>
+  <updated>2019-06-22T06:49:45.013Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2.jenkins学习--虚拟机坑点2</title>
+    <link href="https://hicksalmon.gitee.io/2019/06/22/2.Jenkins%E5%AD%A6%E4%B9%A0--%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%9D%91%E7%82%B92/"/>
+    <id>https://hicksalmon.gitee.io/2019/06/22/2.Jenkins学习--虚拟机坑点2/</id>
+    <published>2019-06-22T06:50:16.529Z</published>
+    <updated>2019-06-22T06:49:45.013Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h2 id="2-Jenkins学习–虚拟机坑点2"><a href="#2-Jenkins学习–虚拟机坑点2" class="headerlink" title="2. Jenkins学习–虚拟机坑点2"></a>2. Jenkins学习–虚拟机坑点2</h2><hr><h4 id="少了一些图形库文件引发一些故事"><a href="#少了一些图形库文件引发一些故事" class="headerlink" title="少了一些图形库文件引发一些故事"></a>少了一些图形库文件引发一些故事</h4><blockquote><ol><li>我在 VMware Workstation 装的是Ubuntu 16.04 server iso ，以至于差一些支持图形界面的库，当我想要安装jenkins时，出现了今天的第一个坑点，出现关于 <strong>AWT</strong> 的错误：<br><strong>java.lang.UnsatisfiedLinkError: /mnt/jdk1.8/jre/lib/amd64/libawt_xawt.so: libXtst.so.6: cannot open shared object file: No such file or directory</strong><br>百度了一下，需要安装，命令如下：<br><strong>apt-get install libxrender-dev</strong><br><strong>apt-get install libxtst-dev</strong></li><li>至此出现第二个关于<strong>虚拟机客户端</strong>的坑点（动态IP让我虚拟机不能上网了）。<br>首先了解了一下 VMWare Workstation中几种联网方式：<br>(1)  <strong>Bridged: Connected directly to the physical network</strong>，使用桥接网卡（VMnet0虚拟网卡），表示当前虚拟机与主机（指运行VMware Workstation软件的计算机）在同一个网络中;<br>(2) <strong>NAT: Used to share the host’s IP address</strong>，使用NAT网卡（VMnet8虚拟网卡），表示虚拟机通过主机单向访问主机及主机之外的网络，主机之外的网络中的计算机，不能访问该虚拟机;<br>(3)  <strong>Host-only： A private network shared with the host</strong>，只使用本地网络（VMnet1虚拟网卡），表示虚拟机只能访问主机及所有使用VMnet1虚拟网卡的虚拟机。主机之外的网络中的计算机不能访问该虚拟机，也不能被该虚拟机所访问；<br>(4) <strong>Custom: Specific virtual network</strong>，没有网络连接，表明该虚拟机与主机没有网络连接。<br><strong>#</strong> 而我前一天使用的时桥接模式,我的笔记本使用的又是 wifi ，路由器现在基本都是动态 IP ，基于此，前一天虚拟机客户端还能上网，今天不能上网了，可能就是虚拟机中默认使用了之前的 IP ，现在主机 IP 改变，他却没变，使得虚拟机不能上网了。于是在这里我就将联网模式改成 NAT 模式了，<strong>然后重启客户端</strong>就可以让虚拟机上网了。重启很重要，最后通过 <strong>ifconfig</strong> 查看分配给客户端的 IP ，使用Xshell 就可以上网了。</li></ol></blockquote></blockquote><p> <strong>2019/6/22：</strong>打开窗户让孤单透气，这一间屋子如此密闭，欢呼声仍飘在空气里，想空无一人的华丽。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;h2 id=&quot;2-Jenkins学习–虚拟机坑点2&quot;&gt;&lt;a href=&quot;#2-Jenkins学习–虚拟机坑点2&quot; class=&quot;headerlink&quot; title=&quot;2. Jenkins学习–虚拟机坑点2&quot;&gt;&lt;/a&gt;2. Jenkins学习–虚拟机坑点
+      
+    
+    </summary>
+    
+      <category term="CD-CI" scheme="https://hicksalmon.gitee.io/categories/CD-CI/"/>
+    
+    
+      <category term="持续集成" scheme="https://hicksalmon.gitee.io/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
+    
+  </entry>
   
   <entry>
     <title>1. jenkins学习--虚拟机坑点1</title>

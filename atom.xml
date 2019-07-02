@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-06-22T06:49:45.013Z</updated>
+  <updated>2019-07-02T13:49:42.410Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://hicksalmon.gitee.io/2019/07/02/3.%20Jenkins%E5%AD%A6%E4%B9%A0--%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%9001/"/>
+    <id>https://hicksalmon.gitee.io/2019/07/02/3. Jenkins学习--持续集成01/</id>
+    <published>2019-07-02T13:46:32.897Z</published>
+    <updated>2019-07-02T13:49:42.410Z</updated>
+    
+    <content type="html"><![CDATA[<p>title:2. jenkins学习–持续集成01</p><p>date:2019-4-20 11：50：01</p><p>tags:[持续集成]</p><p>categories:CD-CI</p><hr><blockquote><h2 id="3-Jenkins学习–持续集成01"><a href="#3-Jenkins学习–持续集成01" class="headerlink" title="3. Jenkins学习–持续集成01"></a>3. Jenkins学习–持续集成01</h2></blockquote><blockquote><p><strong>1.jenkins安装</strong><br>jenkins安装方式很多，在这里我采用的是将 jenkins 的 war 放入 tomcat 中运行来安装的 jenkins 。<br>官网下载 jenkins war 包。 <a href="https://jenkins.io/zh/download/" target="_blank" rel="noopener">https://jenkins.io/zh/download/</a><br>利用Xftp 6 上传 war 至 tomcat 的 webapp 目录，运行 tomcat （./bin/startup.sh）<br>根据提示进行后续安装，选择插件安装的时候，选择默认的插件进行安装。<br><strong>2.jenkins JDK 配置</strong><br>JDK需要注意在服务器中需要配置环境变量， /etc/profile 中进行配置<br><img src="http://cdn.ruoshuisanqian.site/JDK配置.jpg" alt><br><strong>3.jenkins Maven 配置</strong><br>maven需要注意在服务器中需要配置环境变量， /etc/profile 中进行配置<br><img src="http://cdn.ruoshuisanqian.site/maven配置.jpg" alt><br> <strong>4.jenkins git 配置</strong><br> <img src="http://cdn.ruoshuisanqian.site/git配置.jpg" alt><br><strong>5.项目建立与码云打通</strong><br>如果是私有项目需要添加代码托管平台的账号和密码，才能拉取代码。<br><strong>6.使用 执行shell 实现持续集成</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&gt; #!/bin/bash</span><br><span class="line">&gt; source /etc/profile</span><br><span class="line">&gt; tomcat_path=/usr/tomcat/apache-tomcat-<span class="number">8.5</span>.38/webapps</span><br><span class="line">&gt; #war包路径 及 名称</span><br><span class="line">&gt; war_path=/root/.jenkins/workspace/conformity/target/firstone.war</span><br><span class="line">&gt; war_name=conformity.war</span><br><span class="line">&gt; war_file=$&#123;war_path&#125;$&#123;war_name&#125;</span><br><span class="line">&gt; #从git中下载的源码路径</span><br><span class="line">&gt; #$&#123;JENKINS_HOME&#125; 为全局变量 请事先查看 有没有声明没有在 在/etc/profile中声明</span><br><span class="line">&gt; #export JENKINS_HOME=/opt/run_/tomcat/tomcat8-7979/webapps/jenkins</span><br><span class="line">&gt; source_path=$&#123;JENKINS_HOME&#125;/workspace/conformity</span><br><span class="line">&gt; #su root</span><br><span class="line">&gt; #xtj1008611</span><br><span class="line">&gt; echo <span class="string">"切换到root用户成功"</span></span><br><span class="line">&gt; cd root/.jenkins/jobs/conformity</span><br><span class="line">&gt; #日志所在路径</span><br><span class="line">&gt; log_file=$&#123;JENKINS_HOME&#125;<span class="string">"/build_log.log"</span></span><br><span class="line">&gt; echo <span class="string">"一个大西瓜"</span> $&#123;log_file&#125;</span><br><span class="line">&gt; #定义一个函数 用来写入log文件</span><br><span class="line">&gt; writeLogFun()&#123;</span><br><span class="line">&gt;         <span class="keyword">if</span> [ ! -e $log_file ]</span><br><span class="line">&gt;         then</span><br><span class="line">&gt;                 echo <span class="string">"文件不存在 新建一个"</span></span><br><span class="line">&gt;                 touch $&#123;log_file&#125;</span><br><span class="line">&gt;         fi</span><br><span class="line">&gt;         nowtime=`date +%Y%m%d%H%M%S`</span><br><span class="line">&gt;         echo $nowtime$<span class="number">1</span> &gt;&gt; $log_file</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt; writeLogFun <span class="string">"开始执行 mvn install命令当前路径$(pwd)"</span></span><br><span class="line">&gt; #mvn install</span><br><span class="line">&gt; mvn <span class="keyword">package</span></span><br><span class="line">&gt; echo $&#123;war_file&#125;</span><br><span class="line">&gt; su root</span><br><span class="line">&gt; xtj100861</span><br><span class="line">&gt; mv $&#123;war_path&#125; $&#123;tomcat_path&#125;</span><br><span class="line">&gt; echo <span class="string">"两个大西瓜"</span> $&#123;tomcat_path&#125;</span><br><span class="line">&gt; sleep <span class="number">1</span>s</span><br><span class="line">&gt; writeLogFun <span class="string">"tomcat 进行重启"</span></span><br><span class="line">&gt; cd $&#123;tomcat_path&#125;</span><br><span class="line">&gt; ll</span><br><span class="line">&gt; cd ..</span><br><span class="line">&gt; ./bin/startup.sh</span><br><span class="line">&gt; echo [-e $&#123;war_file&#125;]</span><br><span class="line">&gt; echo <span class="string">"好像是成功了"</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;shell 脚本能力还不够，需要加强，这里将之前的项目简单的上传打包，并发布成功了。具体的 shell 还得具体对待。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote><p> <strong>2019/7/2：</strong>今天骚练在我家，明天他就回家了，我继续上班，不久的将来他去福建农林大学读研究生。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;title:2. jenkins学习–持续集成01&lt;/p&gt;
+&lt;p&gt;date:2019-4-20 11：50：01&lt;/p&gt;
+&lt;p&gt;tags:[持续集成]&lt;/p&gt;
+&lt;p&gt;categories:CD-CI&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&quot;3-Jenki
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>2.jenkins学习--虚拟机坑点2</title>

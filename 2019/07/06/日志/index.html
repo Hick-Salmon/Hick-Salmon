@@ -17,13 +17,14 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>弱水三千</title>
-  <meta name="description" content="title:日志 date:2019-4-20 11：50：01 tags:[日志] categories:日志   日志JCL组件结构图适配器模式   为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：  具">
+  <title>日志 | 弱水三千</title>
+  <meta name="description" content="日志JCL组件结构图适配器模式   为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：  具体的桥接见下图:  这里注意只有老版的 spring 是用的 jcl ，新版的 spring 并不是采用 jcl 实">
+<meta name="keywords" content="日志">
 <meta property="og:type" content="article">
-<meta property="og:title" content="RuoShuiSanQian">
+<meta property="og:title" content="日志">
 <meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/06/日志/index.html">
 <meta property="og:site_name" content="RuoShuiSanQian">
-<meta property="og:description" content="title:日志 date:2019-4-20 11：50：01 tags:[日志] categories:日志   日志JCL组件结构图适配器模式   为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：  具">
+<meta property="og:description" content="日志JCL组件结构图适配器模式   为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：  具体的桥接见下图:  这里注意只有老版的 spring 是用的 jcl ，新版的 spring 并不是采用 jcl 实">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://cdn.ruoshuisanqian.site/日志组件.png">
 <meta property="og:image" content="http://cdn.ruoshuisanqian.site/jcl组件结构图.png">
@@ -36,10 +37,10 @@
 <meta property="og:image" content="http://cdn.ruoshuisanqian.site/SLF4J各部件关系图.png">
 <meta property="og:image" content="http://cdn.ruoshuisanqian.site/SLF4J死循环.png">
 <meta property="og:image" content="http://cdn.ruoshuisanqian.site/log4j2xml简单配置.png">
-<meta property="og:updated_time" content="2019-07-06T14:45:14.103Z">
+<meta property="og:updated_time" content="2019-07-06T14:49:50.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RuoShuiSanQian">
-<meta name="twitter:description" content="title:日志 date:2019-4-20 11：50：01 tags:[日志] categories:日志   日志JCL组件结构图适配器模式   为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：  具">
+<meta name="twitter:title" content="日志">
+<meta name="twitter:description" content="日志JCL组件结构图适配器模式   为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：  具体的桥接见下图:  这里注意只有老版的 spring 是用的 jcl ，新版的 spring 并不是采用 jcl 实">
 <meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/日志组件.png">
   <!-- Canonical links -->
   <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/06/日志/index.html">
@@ -194,7 +195,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CD-CI/">CD-CI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/刷题/">刷题</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/心情/">心情</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/计划/">计划</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随记/">随记</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CD-CI/">CD-CI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/刷题/">刷题</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/心情/">心情</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/计划/">计划</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随记/">随记</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -204,7 +205,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/剑指offer/">剑指offer</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情/">心情</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/持续集成/">持续集成</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/清单/">清单</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/资源/">资源</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随记/">随记</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/剑指offer/">剑指offer</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情/">心情</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/持续集成/">持续集成</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/清单/">清单</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/资源/">资源</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随记/">随记</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -214,7 +215,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/剑指offer/" style="font-size: 14px;">剑指offer</a> <a href="/tags/心情/" style="font-size: 13px;">心情</a> <a href="/tags/持续集成/" style="font-size: 13.67px;">持续集成</a> <a href="/tags/清单/" style="font-size: 13px;">清单</a> <a href="/tags/资源/" style="font-size: 13px;">资源</a> <a href="/tags/随记/" style="font-size: 13.33px;">随记</a>
+      <a href="/tags/剑指offer/" style="font-size: 14px;">剑指offer</a> <a href="/tags/心情/" style="font-size: 13px;">心情</a> <a href="/tags/持续集成/" style="font-size: 13.67px;">持续集成</a> <a href="/tags/日志/" style="font-size: 13px;">日志</a> <a href="/tags/清单/" style="font-size: 13px;">清单</a> <a href="/tags/资源/" style="font-size: 13px;">资源</a> <a href="/tags/随记/" style="font-size: 13.33px;">随记</a>
     </div>
   </div>
 
@@ -239,10 +240,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/日志/">日志</a>
               </p>
               <p class="item-title">
-                <a href="/2019/07/06/日志/" class="title">(no title)</a>
+                <a href="/2019/07/06/日志/" class="title">日志</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-07-06T14:45:40.034Z" itemprop="datePublished">2019-07-06</time>
@@ -327,6 +328,14 @@
     
     <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      日志
+    </h1>
+  
+
+      
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
@@ -335,7 +344,17 @@
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/日志/">日志</a>
+  </span>
+
         
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/日志/">日志</a>
+  </span>
+
 
         
 
@@ -345,12 +364,7 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>title:日志</p>
-<p>date:2019-4-20 11：50：01</p>
-<p>tags:[日志]</p>
-<p>categories:日志</p>
-<hr>
-<blockquote>
+        <blockquote>
 <h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p><img src="http://cdn.ruoshuisanqian.site/日志组件.png" alt><br>JCL组件结构图<br><img src="http://cdn.ruoshuisanqian.site/jcl组件结构图.png" alt><br><img src="http://cdn.ruoshuisanqian.site/jcl问题.png" alt><br>适配器模式<br><img src="http://cdn.ruoshuisanqian.site/日志适配器1.png" alt><br><img src="http://cdn.ruoshuisanqian.site/日志适配器2.png" alt></p>
 </blockquote>
 <hr>
@@ -379,7 +393,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://hicksalmon.gitee.io/2019/07/06/日志/" title target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/06/日志/</a>
+      <a href="https://hicksalmon.gitee.io/2019/07/06/日志/" title="日志" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/06/日志/</a>
     </li>
     
     <li class="post-copyright-license">

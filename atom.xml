@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-07-06T14:45:14.103Z</updated>
+  <updated>2019-07-06T14:49:50.606Z</updated>
   <id>https://hicksalmon.gitee.io/</id>
   
   <author>
@@ -17,29 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>日志</title>
     <link href="https://hicksalmon.gitee.io/2019/07/06/%E6%97%A5%E5%BF%97/"/>
     <id>https://hicksalmon.gitee.io/2019/07/06/日志/</id>
     <published>2019-07-06T14:45:40.034Z</published>
-    <updated>2019-07-06T14:45:14.103Z</updated>
+    <updated>2019-07-06T14:49:50.606Z</updated>
     
-    <content type="html"><![CDATA[<p>title:日志</p><p>date:2019-4-20 11：50：01</p><p>tags:[日志]</p><p>categories:日志</p><hr><blockquote><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p><img src="http://cdn.ruoshuisanqian.site/日志组件.png" alt><br>JCL组件结构图<br><img src="http://cdn.ruoshuisanqian.site/jcl组件结构图.png" alt><br><img src="http://cdn.ruoshuisanqian.site/jcl问题.png" alt><br>适配器模式<br><img src="http://cdn.ruoshuisanqian.site/日志适配器1.png" alt><br><img src="http://cdn.ruoshuisanqian.site/日志适配器2.png" alt></p></blockquote><hr><p>为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：<br><img src="http://cdn.ruoshuisanqian.site/SLF4J桥接.png" alt></p><hr><p>具体的桥接见下图:<br><img src="http://cdn.ruoshuisanqian.site/日志问题1.png" alt></p><hr><p>这里注意只有老版的 spring 是用的 jcl ，新版的 spring 并不是采用 jcl 实现的。</p><p>出现这种问题，解决方案有两种<br>1）直接将app中的日志桥接到log4j，即加一个slf4j-log4j12 的桥接器；<br>2）是通过一个替换器（jcl-over-slf4j）将jcl替换掉，来用 slf4f 的，即使用 log4j2 .</p><p>同理其他的日志在slf4j中也可以替换成功，替换方法如下：<br><img src="http://cdn.ruoshuisanqian.site/替换器.png" alt><br><img src="http://cdn.ruoshuisanqian.site/SLF4J各部件关系图.png" alt></p><hr><p>这个时候要注意一点就是不要，同时使用一种日志实现的适配和桥接，不然就会进入一个死循环，运行就会报一个 StackOverflowError ，堆栈溢出的错误。如下图：</p><hr><p><img src="http://cdn.ruoshuisanqian.site/SLF4J死循环.png" alt></p><hr><p>最后放一张简单的 log4j2.xml 的配置文件。</p><hr><p><img src="http://cdn.ruoshuisanqian.site/log4j2xml简单配置.png" alt></p><p> <strong>2019/7/6：</strong>生活的主题就是，面对复杂，保持欢喜。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><p><img src="http://cdn.ruoshuisanqian.site/日志组件.png" alt><br>JCL组件结构图<br><img src="http://cdn.ruoshuisanqian.site/jcl组件结构图.png" alt><br><img src="http://cdn.ruoshuisanqian.site/jcl问题.png" alt><br>适配器模式<br><img src="http://cdn.ruoshuisanqian.site/日志适配器1.png" alt><br><img src="http://cdn.ruoshuisanqian.site/日志适配器2.png" alt></p></blockquote><hr><p>为了解决 jcl 的不足出现了 slf4j ， jcl 通过源码发现，他是采用的一个适配器模式，动态的去决定使用哪种日志，而 slf4j 不一样，他是采用的一种静态桥接方式，是用什么日志，就需要自己添加相应的桥接。对于slf4j的简介如下：<br><img src="http://cdn.ruoshuisanqian.site/SLF4J桥接.png" alt></p><hr><p>具体的桥接见下图:<br><img src="http://cdn.ruoshuisanqian.site/日志问题1.png" alt></p><hr><p>这里注意只有老版的 spring 是用的 jcl ，新版的 spring 并不是采用 jcl 实现的。</p><p>出现这种问题，解决方案有两种<br>1）直接将app中的日志桥接到log4j，即加一个slf4j-log4j12 的桥接器；<br>2）是通过一个替换器（jcl-over-slf4j）将jcl替换掉，来用 slf4f 的，即使用 log4j2 .</p><p>同理其他的日志在slf4j中也可以替换成功，替换方法如下：<br><img src="http://cdn.ruoshuisanqian.site/替换器.png" alt><br><img src="http://cdn.ruoshuisanqian.site/SLF4J各部件关系图.png" alt></p><hr><p>这个时候要注意一点就是不要，同时使用一种日志实现的适配和桥接，不然就会进入一个死循环，运行就会报一个 StackOverflowError ，堆栈溢出的错误。如下图：</p><hr><p><img src="http://cdn.ruoshuisanqian.site/SLF4J死循环.png" alt></p><hr><p>最后放一张简单的 log4j2.xml 的配置文件。</p><hr><p><img src="http://cdn.ruoshuisanqian.site/log4j2xml简单配置.png" alt></p><p> <strong>2019/7/6：</strong>生活的主题就是，面对复杂，保持欢喜。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;title:日志&lt;/p&gt;
-&lt;p&gt;date:2019-4-20 11：50：01&lt;/p&gt;
-&lt;p&gt;tags:[日志]&lt;/p&gt;
-&lt;p&gt;categories:日志&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;h2 id=&quot;日志&quot;&gt;&lt;a href=&quot;#日志&quot; class=&quot;head
+        &lt;blockquote&gt;
+&lt;h2 id=&quot;日志&quot;&gt;&lt;a href=&quot;#日志&quot; class=&quot;headerlink&quot; title=&quot;日志&quot;&gt;&lt;/a&gt;日志&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://cdn.ruoshuisanqian.site/日志组件.png&quot; alt&gt;&lt;b
       
     
     </summary>
     
+      <category term="日志" scheme="https://hicksalmon.gitee.io/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="日志" scheme="https://hicksalmon.gitee.io/tags/%E6%97%A5%E5%BF%97/"/>
     
   </entry>
   

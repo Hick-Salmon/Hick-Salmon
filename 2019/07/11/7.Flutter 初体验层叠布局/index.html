@@ -17,16 +17,23 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>归档: 2019 | 弱水三千</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="RuoShuiSanQian">
-<meta property="og:url" content="https://hicksalmon.gitee.io/archives/2019/page/2/index.html">
+  <title>7.Flutter 初体验层叠布局 | 弱水三千</title>
+  <meta name="description" content="Flutter 层叠布局  Stack实现层叠布局1234567891011121314151617181920212223242526272829303132333435363738import &apos;package:flutter/material.dart&apos;;import &apos;package:flutter/rendering.dart&apos;;void main() =&amp;gt; runApp(MyA">
+<meta name="keywords" content="Flutter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7.Flutter 初体验层叠布局">
+<meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/index.html">
 <meta property="og:site_name" content="RuoShuiSanQian">
+<meta property="og:description" content="Flutter 层叠布局  Stack实现层叠布局1234567891011121314151617181920212223242526272829303132333435363738import &apos;package:flutter/material.dart&apos;;import &apos;package:flutter/rendering.dart&apos;;void main() =&amp;gt; runApp(MyA">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/层叠布局.jpg">
+<meta property="og:updated_time" content="2019-07-11T13:40:32.647Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RuoShuiSanQian">
+<meta name="twitter:title" content="7.Flutter 初体验层叠布局">
+<meta name="twitter:description" content="Flutter 层叠布局  Stack实现层叠布局1234567891011121314151617181920212223242526272829303132333435363738import &apos;package:flutter/material.dart&apos;;import &apos;package:flutter/rendering.dart&apos;;void main() =&amp;gt; runApp(MyA">
+<meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/层叠布局.jpg">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://hicksalmon.gitee.io/archives/2019/page/2/index.html">
+  <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/index.html">
   
     <link rel="alternate" href="/atom.xml" title="RuoShuiSanQian" type="application/atom+xml">
   
@@ -306,164 +313,175 @@
   
   
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope>
-	    <header class="article-header">
-	      <h1 itemprop="title">归档: 2019</h1>
-	      <p class="text-muted">共 10 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
-  
-  
+  <div class="content">
+  <article id="post-7.Flutter 初体验层叠布局" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
-    
+    <div class="article-header">
       
+        
+  
+    <h1 class="article-title" itemprop="name">
+      7.Flutter 初体验层叠布局
+    </h1>
+  
+
       
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2019" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2019
-            </a>
-            <!-- <a href="/archives/2019" class="archive-year">2019</a> -->
-          </h3>
-        </div>
-        <div id="collapse2019" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2019">
-        <div class="panel-body">
-          <div class="collection">
-    
-    
-<a href="/2019/06/21/1.Jenkins学习--虚拟机坑点/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-06-21T14:08:09.791Z" itemprop="datePublished">2019-06-21</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 1. jenkins学习--虚拟机坑点1
-</a>
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/07/11/7.Flutter 初体验层叠布局/" class="article-date">
+	  <time datetime="2019-07-11T13:40:44.025Z" itemprop="datePublished">2019-07-11</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/Flutter/">Flutter</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Flutter/">Flutter</a>
+  </span>
 
 
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/11/7.Flutter 初体验层叠布局/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <blockquote>
+<h2 id="Flutter-层叠布局"><a href="#Flutter-层叠布局" class="headerlink" title="Flutter 层叠布局"></a>Flutter 层叠布局</h2></blockquote>
+<hr>
+<p><strong>Stack</strong>实现层叠布局<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/rendering.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span></span>&#123;</span><br><span class="line">    <span class="comment">//定义一个层叠布局，适合两个类容的层叠，通过 FractionalOffset 设置两个的偏移量，注意这里的偏移量在 0 和 1 之间。</span></span><br><span class="line">    <span class="keyword">var</span> stack = <span class="keyword">new</span> Stack(</span><br><span class="line">    alignment: <span class="function"><span class="keyword">const</span> <span class="title">FractionalOffset</span><span class="params">(<span class="number">0.45</span>, <span class="number">0.5</span>)</span>,</span></span><br><span class="line"><span class="function">    children: &lt;Widget&gt;[</span></span><br><span class="line"><span class="function">      <span class="comment">//创建一个原型头像</span></span></span><br><span class="line"><span class="function">      new <span class="title">CircleAvatar</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        backgroundImage:new NetworkImage(<span class="string">'http://cdn.ruoshuisanqian.site/头像.jpg'</span>)</span>,        </span></span><br><span class="line"><span class="function">        radius: 100.0,</span></span><br><span class="line"><span class="function">      ),</span></span><br><span class="line"><span class="function">      new <span class="title">Container</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        decoration:new BoxDecoration(</span></span></span><br><span class="line"><span class="function"><span class="params">          color: Colors.deepOrange</span></span></span><br><span class="line"><span class="function"><span class="params">        )</span>,</span></span><br><span class="line"><span class="function">        padding: EdgeInsets.<span class="title">all</span><span class="params">(<span class="number">5.0</span>)</span>,</span></span><br><span class="line"><span class="function">        child: <span class="title">Text</span><span class="params">(<span class="string">'当事人懵逼中...'</span>)</span>,</span></span><br><span class="line"><span class="function">      )</span></span><br><span class="line"><span class="function">    ],</span></span><br><span class="line"><span class="function">  )</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">"Stack Demo"</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        appBar: <span class="keyword">new</span> AppBar(title: <span class="keyword">new</span> Text(<span class="string">'层叠布局'</span>),),</span><br><span class="line">        body: Center(</span><br><span class="line">          child: stack,</span><br><span class="line">        ),</span><br><span class="line">      )</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>效果展示</strong><br><img src="http://cdn.ruoshuisanqian.site/层叠布局.jpg" alt></p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/" title="7.Flutter 初体验层叠布局" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://gitee.com/HickSalmon" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt>
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://gitee.com/HickSalmon" target="_blank"><span class="text-dark">HickSalmon</span><small class="ml-1x">不要想太多，你总这样说。</small></a></h3>
+        <div>为何要这样？</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
   
     
-    
-    
-<a href="/2019/05/07/空虚【百度词条】/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-05-07T14:18:43.518Z" itemprop="datePublished">2019-05-07</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 空虚【百度词条】
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/29/复杂链表的复制/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-29T12:42:43.505Z" itemprop="datePublished">2019-04-29</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer 复杂链表的复制
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/29/漫游/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-29T03:16:46.196Z" itemprop="datePublished">2019-04-29</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 漫游
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/28/二叉树中和为某一值的路径/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-28T13:43:20.137Z" itemprop="datePublished">2019-04-28</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer  二叉树中和为某一值的路径
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/27/二叉搜索树的后序遍历序列/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-27T09:29:32.272Z" itemprop="datePublished">2019-04-27</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer 二叉搜索树的后序遍历序列
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/26/从上往下打印二叉树/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-26T12:26:17.613Z" itemprop="datePublished">2019-04-26</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer 从上往下打印二叉树
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/25/栈的压入，弹出序列/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-25T13:45:25.596Z" itemprop="datePublished">2019-04-25</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer 栈的压入，弹出序列
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/24/包含min函数的栈/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-24T13:02:06.118Z" itemprop="datePublished">2019-04-24</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer 包含min函数的栈
-</a>
-
-
-  
-    
-    
-    
-<a href="/2019/04/23/顺时针打印矩阵/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2019-04-23T14:00:50.491Z" itemprop="datePublished">2019-04-23</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 剑指offer 顺时针打印矩阵
-</a>
-
-
-  
-  
-    </div></div></div></section>
-  
-
-	    </div>
-  	</article>
+  <section id="comments">
   	
+      <div id="vcomments"></div>
     
-    <nav class="bar bar-footer clearfix" data-stick-bottom>
-        <div class="bar-inner">
-        <ul class="pager pull-left">
-            
-            <li class="prev">
-                <a href="/archives/2019/">
-                    <i class="icon icon-angle-left"></i>
-                    上一页
-                </a>
-            </li>
-            
-            
-            <li class="next">
-                <a href="/archives/2019/page/3/">
-                    下一页
-                    <i class="icon icon-angle-right"></i>
-                </a>
-            </li>
-            
-        </ul>
-        <div class="total-article bar-right">Page 2 of 3</div>
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2019/07/11/6.Flutter 初体验 Row 及 Colume 布局/" title="6.Flutter 初体验 Row 及 Colume 布局"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class>
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    
- 	
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -514,6 +532,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 

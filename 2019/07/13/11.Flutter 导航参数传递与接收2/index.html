@@ -17,23 +17,26 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>7.Flutter 初体验层叠布局 | 弱水三千</title>
-  <meta name="description" content="Flutter 层叠布局  Stack实现层叠布局1234567891011121314151617181920212223242526272829303132333435363738import &apos;package:flutter/material.dart&apos;;import &apos;package:flutter/rendering.dart&apos;;void main() =&amp;gt; runApp(MyA">
+  <title>11.Flutter 导航参数传递与接收2 | 弱水三千</title>
+  <meta name="description" content="Flutter 导航参数传递与接收2 这里主要是接着上一篇的参数传递进行内容的回显，注意这里的异步请求方式，使用 async。另外后面补充一个引入项目文件的图片方法。  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616">
 <meta name="keywords" content="Flutter">
 <meta property="og:type" content="article">
-<meta property="og:title" content="7.Flutter 初体验层叠布局">
-<meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/index.html">
+<meta property="og:title" content="11.Flutter 导航参数传递与接收2">
+<meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/13/11.Flutter 导航参数传递与接收2/index.html">
 <meta property="og:site_name" content="RuoShuiSanQian">
-<meta property="og:description" content="Flutter 层叠布局  Stack实现层叠布局1234567891011121314151617181920212223242526272829303132333435363738import &apos;package:flutter/material.dart&apos;;import &apos;package:flutter/rendering.dart&apos;;void main() =&amp;gt; runApp(MyA">
+<meta property="og:description" content="Flutter 导航参数传递与接收2 这里主要是接着上一篇的参数传递进行内容的回显，注意这里的异步请求方式，使用 async。另外后面补充一个引入项目文件的图片方法。  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://cdn.ruoshuisanqian.site/层叠布局.jpg">
-<meta property="og:updated_time" content="2019-07-11T13:40:32.647Z">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/duck1.jpg">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/duck2.jpg">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/duck3.jpg">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/asset本地引入.jpg">
+<meta property="og:updated_time" content="2019-07-13T07:10:07.865Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="7.Flutter 初体验层叠布局">
-<meta name="twitter:description" content="Flutter 层叠布局  Stack实现层叠布局1234567891011121314151617181920212223242526272829303132333435363738import &apos;package:flutter/material.dart&apos;;import &apos;package:flutter/rendering.dart&apos;;void main() =&amp;gt; runApp(MyA">
-<meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/层叠布局.jpg">
+<meta name="twitter:title" content="11.Flutter 导航参数传递与接收2">
+<meta name="twitter:description" content="Flutter 导航参数传递与接收2 这里主要是接着上一篇的参数传递进行内容的回显，注意这里的异步请求方式，使用 async。另外后面补充一个引入项目文件的图片方法。  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616">
+<meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/duck1.jpg">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/index.html">
+  <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/13/11.Flutter 导航参数传递与接收2/index.html">
   
     <link rel="alternate" href="/atom.xml" title="RuoShuiSanQian" type="application/atom+xml">
   
@@ -314,14 +317,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-7.Flutter 初体验层叠布局" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-11.Flutter 导航参数传递与接收2" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      7.Flutter 初体验层叠布局
+      11.Flutter 导航参数传递与接收2
     </h1>
   
 
@@ -329,8 +332,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/07/11/7.Flutter 初体验层叠布局/" class="article-date">
-	  <time datetime="2019-07-11T13:40:44.025Z" itemprop="datePublished">2019-07-11</time>
+	<a href="/2019/07/13/11.Flutter 导航参数传递与接收2/" class="article-date">
+	  <time datetime="2019-07-13T07:05:36.578Z" itemprop="datePublished">2019-07-13</time>
 	</a>
 </span>
         
@@ -348,17 +351,31 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/11/7.Flutter 初体验层叠布局/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/13/11.Flutter 导航参数传递与接收2/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <blockquote>
-<h2 id="Flutter-层叠布局"><a href="#Flutter-层叠布局" class="headerlink" title="Flutter 层叠布局"></a>Flutter 层叠布局</h2></blockquote>
+<h2 id="Flutter-导航参数传递与接收2"><a href="#Flutter-导航参数传递与接收2" class="headerlink" title="Flutter 导航参数传递与接收2"></a>Flutter 导航参数传递与接收2</h2></blockquote>
+<p>这里主要是接着上一篇的参数传递进行内容的回显，注意这里的<strong>异步请求</strong>方式，使用 <strong>async</strong>。另外后面补充一个引入项目文件的图片方法。</p>
 <hr>
-<p><strong>Stack</strong>实现层叠布局<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/rendering.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span></span>&#123;</span><br><span class="line">    <span class="comment">//定义一个层叠布局，适合两个类容的层叠，通过 FractionalOffset 设置两个的偏移量，注意这里的偏移量在 0 和 1 之间。</span></span><br><span class="line">    <span class="keyword">var</span> stack = <span class="keyword">new</span> Stack(</span><br><span class="line">    alignment: <span class="function"><span class="keyword">const</span> <span class="title">FractionalOffset</span><span class="params">(<span class="number">0.45</span>, <span class="number">0.5</span>)</span>,</span></span><br><span class="line"><span class="function">    children: &lt;Widget&gt;[</span></span><br><span class="line"><span class="function">      <span class="comment">//创建一个原型头像</span></span></span><br><span class="line"><span class="function">      new <span class="title">CircleAvatar</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        backgroundImage:new NetworkImage(<span class="string">'http://cdn.ruoshuisanqian.site/头像.jpg'</span>)</span>,        </span></span><br><span class="line"><span class="function">        radius: 100.0,</span></span><br><span class="line"><span class="function">      ),</span></span><br><span class="line"><span class="function">      new <span class="title">Container</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        decoration:new BoxDecoration(</span></span></span><br><span class="line"><span class="function"><span class="params">          color: Colors.deepOrange</span></span></span><br><span class="line"><span class="function"><span class="params">        )</span>,</span></span><br><span class="line"><span class="function">        padding: EdgeInsets.<span class="title">all</span><span class="params">(<span class="number">5.0</span>)</span>,</span></span><br><span class="line"><span class="function">        child: <span class="title">Text</span><span class="params">(<span class="string">'当事人懵逼中...'</span>)</span>,</span></span><br><span class="line"><span class="function">      )</span></span><br><span class="line"><span class="function">    ],</span></span><br><span class="line"><span class="function">  )</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">"Stack Demo"</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        appBar: <span class="keyword">new</span> AppBar(title: <span class="keyword">new</span> Text(<span class="string">'层叠布局'</span>),),</span><br><span class="line">        body: Center(</span><br><span class="line">          child: stack,</span><br><span class="line">        ),</span><br><span class="line">      )</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>效果展示</strong><br><img src="http://cdn.ruoshuisanqian.site/层叠布局.jpg" alt></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  runApp(</span><br><span class="line">    MaterialApp(</span><br><span class="line">      title: <span class="string">'跳转并返回数据'</span>,</span><br><span class="line">      home: FirstPage(),</span><br><span class="line">    )</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">FirstPage</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(title: Text(<span class="string">'查看鸭子'</span>),),</span><br><span class="line">      body: RouteButton(),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RouteButton</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> RaisedButton(</span><br><span class="line">      onPressed: ()&#123;_navigateToDuck(context);&#125;,</span><br><span class="line">      child: Text(<span class="string">'To Find Your Lovely Duck'</span>),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//用下划线一般时内部的方法</span></span><br><span class="line">  <span class="comment">//async 异步请求并返回数据</span></span><br><span class="line">  _navigateToDuck(BuildContext context) async&#123;</span><br><span class="line">    <span class="keyword">final</span> result = await Navigator.push(</span><br><span class="line">      context,</span><br><span class="line">      MaterialPageRoute(</span><br><span class="line">        builder: (context) =&gt; DuckPage()</span><br><span class="line">      ));</span><br><span class="line"></span><br><span class="line">      <span class="comment">//通过 Scafflod 的 SnackBar 回显返回的数据</span></span><br><span class="line">      Scaffold.of(context).showSnackBar(SnackBar(content:Text(<span class="string">'$result'</span>)));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DuckPage</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(title: Text(<span class="string">'Duck Page'</span>),),</span><br><span class="line">      body: Center(</span><br><span class="line">        child: Column(</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            RaisedButton(</span><br><span class="line">              child: Text(<span class="string">'骚练'</span>),</span><br><span class="line">              onPressed: ()&#123;</span><br><span class="line">                Navigator.pop(context,<span class="string">'天字第一号，骚练，动感热线：13888888888'</span>);</span><br><span class="line">              &#125;,</span><br><span class="line">            ),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              child: Text(<span class="string">'麻子'</span>),</span><br><span class="line">              onPressed: ()&#123;</span><br><span class="line">                Navigator.pop(context,<span class="string">'地字第一号，骚麻，动感热线：13333333333'</span>);</span><br><span class="line">              &#125;,</span><br><span class="line">            ),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              child: Text(<span class="string">'亦肥'</span>),</span><br><span class="line">              onPressed: ()&#123;</span><br><span class="line">                Navigator.pop(context,<span class="string">'玄字第一号，亦肥，动感热线：18888888888'</span>);</span><br><span class="line">              &#125;,</span><br><span class="line">            ),</span><br><span class="line">            RaisedButton(</span><br><span class="line">              child: Text(<span class="string">'旺仔'</span>),</span><br><span class="line">              onPressed: ()&#123;</span><br><span class="line">                Navigator.pop(context,<span class="string">'黄字第一号，旺仔，动感热线：13999999999'</span>);</span><br><span class="line">              &#125;,</span><br><span class="line">            )</span><br><span class="line">          ],</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>效果展示</strong></p>
+<hr>
+<p><img src="http://cdn.ruoshuisanqian.site/duck1.jpg" alt></p>
+<hr>
+<p><img src="http://cdn.ruoshuisanqian.site/duck2.jpg" alt></p>
+<hr>
+<p><img src="http://cdn.ruoshuisanqian.site/duck3.jpg" alt></p>
+<hr>
+<p>第一步在中进行引入图片的路径，比如我们创建文件夹 <strong>images</strong> 并存入 avatar.jpg 图片，我们需要先在 <strong>pubspec.yaml</strong> 文件中使用 <strong>assets</strong> 引入，然后在通过 <strong>Image.asset()</strong> 引用图片，这里有一个坑点，是 yaml 中必须按层级关系将语法对齐，否则就会出错，如下面的 <strong>assets:</strong> 需要与上面的 <strong>uses-material-design: true</strong> 对齐才行。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line"># The following section is specific to Flutter.</span><br><span class="line">flutter:</span><br><span class="line"></span><br><span class="line">  # The following line ensures that the Material Icons font is</span><br><span class="line">  # included with your application, so that you can use the icons in</span><br><span class="line">  # the material Icons class.</span><br><span class="line">  uses-material-design: <span class="keyword">true</span></span><br><span class="line"></span><br><span class="line">  # To add assets to your application, add an assets section, like this:</span><br><span class="line">  # assets:</span><br><span class="line">  #  - images/a_dot_burr.jpeg</span><br><span class="line">  #  - images/a_dot_ham.jpeg</span><br><span class="line">  assets:</span><br><span class="line">    - images/avatar.jpg</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Container(</span><br><span class="line">      child: Image.asset(<span class="string">'images/avatar.jpg'</span>),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>效果图如下：</strong></p>
+<hr>
+<p><img src="http://cdn.ruoshuisanqian.site/asset本地引入.jpg" alt><br><strong>2019/7/13:</strong>生活是一种飞行，四季是爱的衬景。</p>
 
       
     </div>
@@ -368,7 +385,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/" title="7.Flutter 初体验层叠布局" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/11/7.Flutter 初体验层叠布局/</a>
+      <a href="https://hicksalmon.gitee.io/2019/07/13/11.Flutter 导航参数传递与接收2/" title="11.Flutter 导航参数传递与接收2" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/13/11.Flutter 导航参数传递与接收2/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -414,13 +431,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2019/07/12/8.Flutter 初体验卡片布局/" title="8.Flutter 初体验卡片布局"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2019/07/11/6.Flutter 初体验 Row 及 Colume 布局/" title="6.Flutter 初体验 Row 及 Colume 布局"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/07/13/10.Flutter 导航参数传递与接收/" title="10.Flutter 导航参数传递与接收"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

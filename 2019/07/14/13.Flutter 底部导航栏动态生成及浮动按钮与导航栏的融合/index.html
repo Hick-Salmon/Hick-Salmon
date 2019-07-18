@@ -47,6 +47,8 @@
   <link rel="stylesheet" href="/css/style.css">
   
   
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css">
+  
   
   
 </head>
@@ -441,7 +443,7 @@
     
   <section id="comments">
   	
-      <div id="uyan_frame"></div>
+
     
   </section>
 
@@ -586,7 +588,23 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
    
     
-    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
+<script src="//cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js"></script>
+<script>
+var gitment = new Gitment({
+  // id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
+  // https://github.com/imsun/gitment/issues/55
+  // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
+  id: '13.Flutter 底部导航栏动态生成及浮动按钮与导航栏的融合', 
+  owner: 'Hick-Salmon', // 可以是你的GitHub用户名，也可以是github id
+  repo: 'gitalk',
+  oauth: {
+    client_id: '95095b3b90e1a8dc89d5',
+    client_secret: 'ce27ba61e43cbbf119877799dcd8bacd8d91d501',
+  }
+})
+gitment.render('comments')
+</script>
+
 
 
 

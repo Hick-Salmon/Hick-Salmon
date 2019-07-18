@@ -17,23 +17,23 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>8.Flutter 初体验卡片布局 | 弱水三千</title>
-  <meta name="description" content="Flutter 卡片布局  Card实现卡片布局1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162import &apos;package:flutter/material.dart&apos;;import &apos;package:flutt">
+  <title>20.Flutter ExpansionTile实现开关闭合 | 弱水三千</title>
+  <meta name="description" content="Flutter ExpansionTile实现开关闭合  main.dart 文件  123456789101112131415import &apos;package:flutter/material.dart&apos;;import &apos;package:demo08/expantion_tile.dart&apos;;void main() =&amp;gt; runApp(MyApp());class MyApp extend">
 <meta name="keywords" content="Flutter">
 <meta property="og:type" content="article">
-<meta property="og:title" content="8.Flutter 初体验卡片布局">
-<meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/12/8.Flutter 初体验卡片布局/index.html">
+<meta property="og:title" content="20.Flutter ExpansionTile实现开关闭合">
+<meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/18/20.Flutter ExpansionTile实现开关闭合/index.html">
 <meta property="og:site_name" content="RuoShuiSanQian">
-<meta property="og:description" content="Flutter 卡片布局  Card实现卡片布局1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162import &apos;package:flutter/material.dart&apos;;import &apos;package:flutt">
+<meta property="og:description" content="Flutter ExpansionTile实现开关闭合  main.dart 文件  123456789101112131415import &apos;package:flutter/material.dart&apos;;import &apos;package:demo08/expantion_tile.dart&apos;;void main() =&amp;gt; runApp(MyApp());class MyApp extend">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://cdn.ruoshuisanqian.site/card布局.jpg">
-<meta property="og:updated_time" content="2019-07-12T14:19:55.454Z">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/expansionTile.gif">
+<meta property="og:updated_time" content="2019-07-18T12:35:01.516Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="8.Flutter 初体验卡片布局">
-<meta name="twitter:description" content="Flutter 卡片布局  Card实现卡片布局1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162import &apos;package:flutter/material.dart&apos;;import &apos;package:flutt">
-<meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/card布局.jpg">
+<meta name="twitter:title" content="20.Flutter ExpansionTile实现开关闭合">
+<meta name="twitter:description" content="Flutter ExpansionTile实现开关闭合  main.dart 文件  123456789101112131415import &apos;package:flutter/material.dart&apos;;import &apos;package:demo08/expantion_tile.dart&apos;;void main() =&amp;gt; runApp(MyApp());class MyApp extend">
+<meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/expansionTile.gif">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/12/8.Flutter 初体验卡片布局/index.html">
+  <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/18/20.Flutter ExpansionTile实现开关闭合/index.html">
   
     <link rel="alternate" href="/atom.xml" title="RuoShuiSanQian" type="application/atom+xml">
   
@@ -314,14 +314,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-8.Flutter 初体验卡片布局" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-20.Flutter ExpansionTile实现开关闭合" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      8.Flutter 初体验卡片布局
+      20.Flutter ExpansionTile实现开关闭合
     </h1>
   
 
@@ -329,8 +329,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/07/12/8.Flutter 初体验卡片布局/" class="article-date">
-	  <time datetime="2019-07-12T14:20:11.801Z" itemprop="datePublished">2019-07-12</time>
+	<a href="/2019/07/18/20.Flutter ExpansionTile实现开关闭合/" class="article-date">
+	  <time datetime="2019-07-18T12:35:27.089Z" itemprop="datePublished">2019-07-18</time>
 	</a>
 </span>
         
@@ -348,18 +348,28 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/12/8.Flutter 初体验卡片布局/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/18/20.Flutter ExpansionTile实现开关闭合/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <blockquote>
-<h2 id="Flutter-卡片布局"><a href="#Flutter-卡片布局" class="headerlink" title="Flutter 卡片布局"></a>Flutter 卡片布局</h2></blockquote>
+<h2 id="Flutter-ExpansionTile实现开关闭合"><a href="#Flutter-ExpansionTile实现开关闭合" class="headerlink" title="Flutter ExpansionTile实现开关闭合"></a>Flutter ExpansionTile实现开关闭合</h2></blockquote>
 <hr>
-<p><strong>Card</strong>实现卡片布局<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/rendering.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span></span>&#123;</span><br><span class="line">    <span class="keyword">var</span> card = <span class="keyword">new</span> Card(</span><br><span class="line">      child: Column(</span><br><span class="line">        children: &lt;Widget&gt;[</span><br><span class="line">          ListTile(</span><br><span class="line">            title: Text(<span class="string">'中国金科'</span>,style:TextStyle(fontWeight: FontWeight.w500)),</span><br><span class="line">            subtitle: Text(<span class="string">'麻子哥'</span>),</span><br><span class="line">            leading: Icon(Icons.account_box, color: Colors.lightBlue,), </span><br><span class="line">          ),</span><br><span class="line">          <span class="comment">//加入一个分割线显得更好看一点，初学实践</span></span><br><span class="line">          <span class="keyword">new</span> Divider(),</span><br><span class="line">           ListTile(</span><br><span class="line">            title: Text(<span class="string">'福建网龙'</span>,style:TextStyle(fontWeight: FontWeight.w500)),</span><br><span class="line">            subtitle: Text(<span class="string">'宋吉吉'</span>),</span><br><span class="line">            leading: Icon(Icons.account_box, color: Colors.lightBlue,), </span><br><span class="line">          ),</span><br><span class="line">          <span class="keyword">new</span> Divider(),</span><br><span class="line">           ListTile(</span><br><span class="line">            title: Text(<span class="string">'腾讯'</span>,style:TextStyle(fontWeight: FontWeight.w500)),</span><br><span class="line">            subtitle: Text(<span class="string">'旺仔'</span>),</span><br><span class="line">            leading: Icon(Icons.account_box, color: Colors.lightBlue,), </span><br><span class="line">          ),</span><br><span class="line">          <span class="keyword">new</span> Divider(),</span><br><span class="line">          ListTile(</span><br><span class="line">            title: Text(<span class="string">'方特公园'</span>,style:TextStyle(fontWeight: FontWeight.w500)),</span><br><span class="line">            <span class="comment">//副标题</span></span><br><span class="line">            subtitle: Text(<span class="string">'傲翊'</span>),</span><br><span class="line">            leading: Icon(Icons.account_box, color: Colors.lightBlue,), </span><br><span class="line">          ),</span><br><span class="line">          <span class="comment">//这里貌似超过屏幕大小就会报错，暂时不加太多，后面继续学习看一下有没有什么好的解决方法</span></span><br><span class="line">          <span class="comment">// ListTile(</span></span><br><span class="line">          <span class="comment">//   title: Text('迷你玩',style:TextStyle(fontWeight: FontWeight.w500)),</span></span><br><span class="line">          <span class="comment">//   subtitle: Text('一尺'),</span></span><br><span class="line">          <span class="comment">//   leading: Icon(Icons.account_box, color: Colors.lightBlue,), </span></span><br><span class="line">          <span class="comment">// ),</span></span><br><span class="line">          <span class="comment">// ListTile(</span></span><br><span class="line">          <span class="comment">//   title: Text('孚佑传媒',style:TextStyle(fontWeight: FontWeight.w500)),</span></span><br><span class="line">          <span class="comment">//   subtitle: Text('启航'),</span></span><br><span class="line">          <span class="comment">//   leading: Icon(Icons.account_box, color: Colors.lightBlue,), </span></span><br><span class="line">          <span class="comment">// ),</span></span><br><span class="line">        ],</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">"Stack Demo"</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        appBar: <span class="keyword">new</span> AppBar(title: <span class="keyword">new</span> Text(<span class="string">'联系人卡片'</span>),),</span><br><span class="line">        body: Center(</span><br><span class="line">          child: card,</span><br><span class="line">        ),</span><br><span class="line">      )</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>效果展示</strong><br><img src="http://cdn.ruoshuisanqian.site/card布局.jpg" alt></p>
-<p><strong>2019/7/12:</strong>今天工头给我说，达者为师，我又学会了新词。</p>
+<p><strong>main.dart</strong> 文件</p>
+<hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'package:demo08/expantion_tile.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">'展开闭合'</span>,</span><br><span class="line">      theme: ThemeData.light(),</span><br><span class="line">      home: ExpansionTileDemo(),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>expansion_tile.dart</strong> 代码，模拟后台传过来的数据</p>
+<hr>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ExpansionTileDemo</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span> </span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> Scaffold(</span><br><span class="line">      appBar: AppBar(title: Text(<span class="string">'ExpansionTile Test'</span>),),</span><br><span class="line">      body: Center(</span><br><span class="line">        <span class="comment">//使用展开闭合的组件 ExpansionTile </span></span><br><span class="line">        child: ExpansionTile(</span><br><span class="line">          title: Text(<span class="string">'测试开关闭合'</span>),</span><br><span class="line">          leading: Icon(Icons.ac_unit),</span><br><span class="line">          backgroundColor: Colors.amber,</span><br><span class="line">          children: &lt;Widget&gt;[</span><br><span class="line">            ListTile(</span><br><span class="line">              title: Text(<span class="string">'开了'</span>),</span><br><span class="line">              subtitle: Text(<span class="string">'子标题咱也可以显示'</span>),</span><br><span class="line">              </span><br><span class="line">            )</span><br><span class="line">          ],</span><br><span class="line">          <span class="comment">//设置是否展开的，true 展开，默认是 false</span></span><br><span class="line">          <span class="comment">// initiallyExpanded: true,</span></span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>效果</strong></p>
+<hr>
+<p><img src="http://cdn.ruoshuisanqian.site/expansionTile.gif" alt></p>
+<hr>
+<p><strong>2019/7/17:</strong>成熟不是为了走向复杂，而是为了抵达天真。</p>
 
       
     </div>
@@ -369,7 +379,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://hicksalmon.gitee.io/2019/07/12/8.Flutter 初体验卡片布局/" title="8.Flutter 初体验卡片布局" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/12/8.Flutter 初体验卡片布局/</a>
+      <a href="https://hicksalmon.gitee.io/2019/07/18/20.Flutter ExpansionTile实现开关闭合/" title="20.Flutter ExpansionTile实现开关闭合" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/18/20.Flutter ExpansionTile实现开关闭合/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -415,13 +425,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2019/07/12/9.Flutter 导航组件/" title="9.Flutter 导航组件"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2019/07/11/7.Flutter 初体验层叠布局/" title="7.Flutter 初体验层叠布局"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/07/17/19.Flutter Wrap流式布局/" title="19.Flutter Wrap流式布局"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

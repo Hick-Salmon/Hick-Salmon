@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>3. jenkins学习--持续集成01 | 弱水三千</title>
+  <meta name="description" content="3. Jenkins学习–持续集成01  1.jenkins安装jenkins安装方式很多，在这里我采用的是将 jenkins 的 war 放入 tomcat 中运行来安装的 jenkins 。官网下载 jenkins war 包。 https://jenkins.io/zh/download/利用Xftp 6 上传 war 至 tomcat 的 webapp 目录，运行 tomcat （./b">
+<meta name="keywords" content="持续集成">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3. jenkins学习--持续集成01">
+<meta property="og:url" content="https://hicksalmon.gitee.io/2019/07/19/3.Jenkins学习--持续集成01/index.html">
+<meta property="og:site_name" content="RuoShuiSanQian">
+<meta property="og:description" content="3. Jenkins学习–持续集成01  1.jenkins安装jenkins安装方式很多，在这里我采用的是将 jenkins 的 war 放入 tomcat 中运行来安装的 jenkins 。官网下载 jenkins war 包。 https://jenkins.io/zh/download/利用Xftp 6 上传 war 至 tomcat 的 webapp 目录，运行 tomcat （./b">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/JDK配置.jpg">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/maven配置.jpg">
+<meta property="og:image" content="http://cdn.ruoshuisanqian.site/git配置.jpg">
+<meta property="og:updated_time" content="2019-07-02T14:00:10.828Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="3. jenkins学习--持续集成01">
+<meta name="twitter:description" content="3. Jenkins学习–持续集成01  1.jenkins安装jenkins安装方式很多，在这里我采用的是将 jenkins 的 war 放入 tomcat 中运行来安装的 jenkins 。官网下载 jenkins war 包。 https://jenkins.io/zh/download/利用Xftp 6 上传 war 至 tomcat 的 webapp 目录，运行 tomcat （./b">
+<meta name="twitter:image" content="http://cdn.ruoshuisanqian.site/JDK配置.jpg">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hicksalmon.gitee.io/2019/07/19/3.Jenkins学习--持续集成01/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="RuoShuiSanQian" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
+  
+</head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://gitee.com/HickSalmon" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">HickSalmon</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">不要想太多，你总这样说。</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> HuBei, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech>
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://gitee.com/HickSalmon" target="_blank" title="Github" data-toggle="tooltip" data-placement="top"><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/hicksalmon" target="_blank" title="Weibo" data-toggle="tooltip" data-placement="top"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle="tooltip" data-placement="top"><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>站点尚未完善，我们慢慢来！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CD-CI/">CD-CI</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Flutter/">Flutter</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/刷题/">刷题</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/心情/">心情</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/计划/">计划</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/资源/">资源</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随记/">随记</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Flutter/">Flutter</a><span class="tag-list-count">20</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/剑指offer/">剑指offer</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/心情/">心情</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/持续集成/">持续集成</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日志/">日志</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/清单/">清单</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/资源/">资源</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随记/">随记</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Flutter/" style="font-size: 14px;">Flutter</a> <a href="/tags/剑指offer/" style="font-size: 13.75px;">剑指offer</a> <a href="/tags/心情/" style="font-size: 13.5px;">心情</a> <a href="/tags/持续集成/" style="font-size: 13.5px;">持续集成</a> <a href="/tags/日志/" style="font-size: 13px;">日志</a> <a href="/tags/清单/" style="font-size: 13px;">清单</a> <a href="/tags/资源/" style="font-size: 13px;">资源</a> <a href="/tags/随记/" style="font-size: 13.25px;">随记</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">40</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/刷题/">刷题</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/19/栈的压入，弹出序列/" class="title">剑指offer 栈的压入，弹出序列</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-19T08:23:26.241Z" itemprop="datePublished">2019-07-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/计划/">计划</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/19/缘起/" class="title">计划清单</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-19T08:23:26.236Z" itemprop="datePublished">2019-07-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/心情/">心情</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/19/突然内心的挣扎/" class="title">突然内心的挣扎</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-19T08:23:26.231Z" itemprop="datePublished">2019-07-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/刷题/">刷题</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/19/顺时针打印矩阵/" class="title">剑指offer 顺时针打印矩阵</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-19T08:23:26.228Z" itemprop="datePublished">2019-07-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/刷题/">刷题</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/07/19/树的子结构/" class="title">剑指offer 树的子结构</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-07-19T08:23:26.225Z" itemprop="datePublished">2019-07-19</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-3.Jenkins学习--持续集成01" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      3. jenkins学习--持续集成01
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2019/07/19/3.Jenkins学习--持续集成01/" class="article-date">
+	  <time datetime="2019-07-19T08:23:26.076Z" itemprop="datePublished">2019-07-19</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/CD-CI/">CD-CI</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/持续集成/">持续集成</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/07/19/3.Jenkins学习--持续集成01/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 738(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <blockquote>
+<h2 id="3-Jenkins学习–持续集成01"><a href="#3-Jenkins学习–持续集成01" class="headerlink" title="3. Jenkins学习–持续集成01"></a>3. Jenkins学习–持续集成01</h2></blockquote>
+<blockquote>
+<p><strong>1.jenkins安装</strong><br>jenkins安装方式很多，在这里我采用的是将 jenkins 的 war 放入 tomcat 中运行来安装的 jenkins 。<br>官网下载 jenkins war 包。 <a href="https://jenkins.io/zh/download/" target="_blank" rel="noopener">https://jenkins.io/zh/download/</a><br>利用Xftp 6 上传 war 至 tomcat 的 webapp 目录，运行 tomcat （./bin/startup.sh）<br>根据提示进行后续安装，选择插件安装的时候，选择默认的插件进行安装。<br><strong>2.jenkins JDK 配置</strong><br>JDK需要注意在服务器中需要配置环境变量， /etc/profile 中进行配置<br><img src="http://cdn.ruoshuisanqian.site/JDK配置.jpg" alt><br><strong>3.jenkins Maven 配置</strong><br>maven需要注意在服务器中需要配置环境变量， /etc/profile 中进行配置<br><img src="http://cdn.ruoshuisanqian.site/maven配置.jpg" alt><br> <strong>4.jenkins git 配置</strong><br> <img src="http://cdn.ruoshuisanqian.site/git配置.jpg" alt><br><strong>5.项目建立与码云打通</strong><br>如果是私有项目需要添加代码托管平台的账号和密码，才能拉取代码。<br><strong>6.使用 执行shell 实现持续集成</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">&gt; #!/bin/bash</span><br><span class="line">&gt; source /etc/profile</span><br><span class="line">&gt; tomcat_path=/usr/tomcat/apache-tomcat-<span class="number">8.5</span>.38/webapps</span><br><span class="line">&gt; #war包路径 及 名称</span><br><span class="line">&gt; war_path=/root/.jenkins/workspace/conformity/target/firstone.war</span><br><span class="line">&gt; war_name=conformity.war</span><br><span class="line">&gt; war_file=$&#123;war_path&#125;$&#123;war_name&#125;</span><br><span class="line">&gt; #从git中下载的源码路径</span><br><span class="line">&gt; #$&#123;JENKINS_HOME&#125; 为全局变量 请事先查看 有没有声明没有在 在/etc/profile中声明</span><br><span class="line">&gt; #export JENKINS_HOME=/opt/run_/tomcat/tomcat8-7979/webapps/jenkins</span><br><span class="line">&gt; source_path=$&#123;JENKINS_HOME&#125;/workspace/conformity</span><br><span class="line">&gt; #su root</span><br><span class="line">&gt; #xtj1008611</span><br><span class="line">&gt; echo <span class="string">"切换到root用户成功"</span></span><br><span class="line">&gt; cd root/.jenkins/jobs/conformity</span><br><span class="line">&gt; #日志所在路径</span><br><span class="line">&gt; log_file=$&#123;JENKINS_HOME&#125;<span class="string">"/build_log.log"</span></span><br><span class="line">&gt; echo <span class="string">"一个大西瓜"</span> $&#123;log_file&#125;</span><br><span class="line">&gt; #定义一个函数 用来写入log文件</span><br><span class="line">&gt; writeLogFun()&#123;</span><br><span class="line">&gt;         <span class="keyword">if</span> [ ! -e $log_file ]</span><br><span class="line">&gt;         then</span><br><span class="line">&gt;                 echo <span class="string">"文件不存在 新建一个"</span></span><br><span class="line">&gt;                 touch $&#123;log_file&#125;</span><br><span class="line">&gt;         fi</span><br><span class="line">&gt;         nowtime=`date +%Y%m%d%H%M%S`</span><br><span class="line">&gt;         echo $nowtime$<span class="number">1</span> &gt;&gt; $log_file</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt; writeLogFun <span class="string">"开始执行 mvn install命令当前路径$(pwd)"</span></span><br><span class="line">&gt; #mvn install</span><br><span class="line">&gt; mvn <span class="keyword">package</span></span><br><span class="line">&gt; echo $&#123;war_file&#125;</span><br><span class="line">&gt; su root</span><br><span class="line">&gt; xtj100861</span><br><span class="line">&gt; mv $&#123;war_path&#125; $&#123;tomcat_path&#125;</span><br><span class="line">&gt; echo <span class="string">"两个大西瓜"</span> $&#123;tomcat_path&#125;</span><br><span class="line">&gt; sleep <span class="number">1</span>s</span><br><span class="line">&gt; writeLogFun <span class="string">"tomcat 进行重启"</span></span><br><span class="line">&gt; cd $&#123;tomcat_path&#125;</span><br><span class="line">&gt; ll</span><br><span class="line">&gt; cd ..</span><br><span class="line">&gt; ./bin/startup.sh</span><br><span class="line">&gt; echo [-e $&#123;war_file&#125;]</span><br><span class="line">&gt; echo <span class="string">"好像是成功了"</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>打包的时候可能出现找不到 xml 文件的情况。</p>
+<p><strong>org.springframework.beans.factory.BeanDefinitionStoreException: Could not resolve bean definition resource pattern</strong> </p>
+<p><strong>[classpath:spring/applicationContext-*.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/] cannot be resolved to URL because it does not exist</strong></p>
+<p>此时是因为默认 maven 不扫描 xml文件，我们需要在 pom 文件中申明</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;build&gt; </span><br><span class="line">&gt;     &lt;resources&gt;</span><br><span class="line">&gt;             &lt;resource&gt;</span><br><span class="line">&gt;                 &lt;directory&gt;src/main/java&lt;/directory&gt;</span><br><span class="line">&gt;                 &lt;includes&gt;</span><br><span class="line">&gt;                     &lt;include&gt;**<span class="comment">/*.properties&lt;/include&gt;</span></span><br><span class="line">&gt;                     &lt;include&gt;**/*.xml&lt;/include&gt;</span><br><span class="line">&gt;                 &lt;/includes&gt;</span><br><span class="line">&gt;                 &lt;filtering&gt;false&lt;/filtering&gt;</span><br><span class="line">&gt;         &lt;/resources&gt;</span><br><span class="line">&gt;     &lt;/build&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>shell 脚本能力还不够，需要加强，这里将之前的项目简单的上传打包，并发布成功了。具体的 shell 还得具体对待。</p>
+</blockquote>
+<p> <strong>2019/7/2：</strong>今天骚练在我家，明天他就回家了，我继续上班，不久的将来他去福建农林大学读研究生。</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://hicksalmon.gitee.io/2019/07/19/3.Jenkins学习--持续集成01/" title="3. jenkins学习--持续集成01" target="_blank" rel="external">https://hicksalmon.gitee.io/2019/07/19/3.Jenkins学习--持续集成01/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://gitee.com/HickSalmon" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt>
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://gitee.com/HickSalmon" target="_blank"><span class="text-dark">HickSalmon</span><small class="ml-1x">不要想太多，你总这样说。</small></a></h3>
+        <div>为何要这样？</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+           
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2019/07/19/4.Flutter初体验ListView动态列表/" title="4.Flutter初体验ListView动态列表"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2019/07/19/3.Flutter初体验ListView组件浅尝/" title="3.Flutter初体验ListView组件浅尝"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫">
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class>
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://gitee.com/HickSalmon" target="_blank" title="Github" data-toggle="tooltip" data-placement="top"><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/hicksalmon" target="_blank" title="Weibo" data-toggle="tooltip" data-placement="top"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle="tooltip" data-placement="top"><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="/js/plugin.min.js"></script>
+<script src="/js/application.js"></script>
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'a2a7d4196459c6a3e869',
+    clientSecret: 'd787f30d0bee45323fb2cfd45d23abec4ef0fe6f',
+    repo: 'gitalk',
+    owner: 'Hick-Salmon',
+    admin: ['Hick-Salmon'],
+    id: md5(location.pathname),
+    distractionFreeMode: true
+  })
+  gitalk.render('comments')
+  </script>
+
+      
+
+
+
+
+
+
+
+</body>
+</html>

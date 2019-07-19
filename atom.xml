@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://hicksalmon.gitee.io/"/>
-  <updated>2019-04-20T03:58:28.015Z</updated>
-  <id>https://hicksalmon.gitee.io/</id>
+  <link href="https://hick-salmon.github.io/Hick-Salmon/"/>
+  <updated>2019-07-19T08:38:20.283Z</updated>
+  <id>https://hick-salmon.github.io/Hick-Salmon/</id>
   
   <author>
     <name>HickSalmon</name>
@@ -17,35 +17,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>程序员修炼之路</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/19/%E7%A8%8B%E5%BA%8F%E5%91%98%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/19/程序员修炼之路/</id>
-    <published>2019-07-19T08:23:26.175Z</published>
-    <updated>2019-04-20T03:58:28.015Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="程序员修炼之路"><a href="#程序员修炼之路" class="headerlink" title="程序员修炼之路"></a>程序员修炼之路</h2><hr><p><a href="https://github.com/Snailclimb/programmer-advancement" target="_blank" rel="noopener">https://github.com/Snailclimb/programmer-advancement</a></p><hr><blockquote><p><strong>修炼：</strong>和优秀的人一起久了，也会变得优秀。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;程序员修炼之路&quot;&gt;&lt;a href=&quot;#程序员修炼之路&quot; class=&quot;headerlink&quot; title=&quot;程序员修炼之路&quot;&gt;&lt;/a&gt;程序员修炼之路&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/Snailclimb/progra
-      
-    
-    </summary>
-    
-      <category term="资源" scheme="https://hicksalmon.gitee.io/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-      <category term="资源" scheme="https://hicksalmon.gitee.io/tags/%E8%B5%84%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
     <title>20.FlutterExpansionTile实现开关闭合</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/18/20.Flutter--ExpansionTile%E5%AE%9E%E7%8E%B0%E5%BC%80%E5%85%B3%E9%97%AD%E5%90%88/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/18/20.Flutter--ExpansionTile实现开关闭合/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/18/20.Flutter--ExpansionTile%E5%AE%9E%E7%8E%B0%E5%BC%80%E5%85%B3%E9%97%AD%E5%90%88/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/18/20.Flutter--ExpansionTile实现开关闭合/</id>
     <published>2019-07-18T03:50:01.000Z</published>
     <updated>2019-07-19T08:38:20.283Z</updated>
     
@@ -61,17 +35,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>19.FlutterWrap流式布局</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/17/19.FlutterWrap%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/17/19.FlutterWrap流式布局/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/17/19.FlutterWrap%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/17/19.FlutterWrap流式布局/</id>
     <published>2019-07-17T03:50:01.000Z</published>
     <updated>2019-07-19T08:37:25.297Z</updated>
     
@@ -87,17 +61,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>17.Flutter页面状态保持</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/16/17.Flutter%E9%A1%B5%E9%9D%A2%E7%8A%B6%E6%80%81%E4%BF%9D%E6%8C%81/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/16/17.Flutter页面状态保持/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/16/17.Flutter%E9%A1%B5%E9%9D%A2%E7%8A%B6%E6%80%81%E4%BF%9D%E6%8C%81/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/16/17.Flutter页面状态保持/</id>
     <published>2019-07-16T03:50:01.000Z</published>
     <updated>2019-07-19T08:36:33.009Z</updated>
     
@@ -113,17 +87,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>18.Flutter搜索条</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/16/18.Flutter%E6%90%9C%E7%B4%A2%E6%9D%A1/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/16/18.Flutter搜索条/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/16/18.Flutter%E6%90%9C%E7%B4%A2%E6%9D%A1/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/16/18.Flutter搜索条/</id>
     <published>2019-07-16T03:50:01.000Z</published>
     <updated>2019-07-19T08:37:00.194Z</updated>
     
@@ -141,17 +115,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>突然内心的挣扎</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/16/%E7%AA%81%E7%84%B6%E5%86%85%E5%BF%83%E7%9A%84%E6%8C%A3%E6%89%8E/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/16/突然内心的挣扎/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/16/%E7%AA%81%E7%84%B6%E5%86%85%E5%BF%83%E7%9A%84%E6%8C%A3%E6%89%8E/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/16/突然内心的挣扎/</id>
     <published>2019-07-16T03:50:01.000Z</published>
     <updated>2019-07-19T08:44:42.440Z</updated>
     
@@ -169,17 +143,17 @@
     
     </summary>
     
-      <category term="心情" scheme="https://hicksalmon.gitee.io/categories/%E5%BF%83%E6%83%85/"/>
+      <category term="心情" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/%E5%BF%83%E6%83%85/"/>
     
     
-      <category term="心情" scheme="https://hicksalmon.gitee.io/tags/%E5%BF%83%E6%83%85/"/>
+      <category term="心情" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/%E5%BF%83%E6%83%85/"/>
     
   </entry>
   
   <entry>
     <title>14.Flutter过度动画1</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/15/14.Flutter%E8%BF%87%E5%BA%A6%E5%8A%A8%E7%94%BB1/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/15/14.Flutter过度动画1/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/15/14.Flutter%E8%BF%87%E5%BA%A6%E5%8A%A8%E7%94%BB1/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/15/14.Flutter过度动画1/</id>
     <published>2019-07-15T03:50:01.000Z</published>
     <updated>2019-07-19T08:34:58.847Z</updated>
     
@@ -195,17 +169,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>15.Flutter过度动画2</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/15/15.Flutter%E8%BF%87%E5%BA%A6%E5%8A%A8%E7%94%BB2/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/15/15.Flutter过度动画2/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/15/15.Flutter%E8%BF%87%E5%BA%A6%E5%8A%A8%E7%94%BB2/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/15/15.Flutter过度动画2/</id>
     <published>2019-07-15T03:50:01.000Z</published>
     <updated>2019-07-19T08:35:21.040Z</updated>
     
@@ -222,17 +196,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>16.Flutter毛玻璃效果</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/15/16.Flutter%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/15/16.Flutter毛玻璃效果/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/15/16.Flutter%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/15/16.Flutter毛玻璃效果/</id>
     <published>2019-07-15T03:50:01.000Z</published>
     <updated>2019-07-19T08:36:02.949Z</updated>
     
@@ -249,17 +223,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>13.Flutter底部导航栏动态生成及浮动按钮与导航栏的融合</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/14/13.Flutter%E5%BA%95%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E5%8F%8A%E6%B5%AE%E5%8A%A8%E6%8C%89%E9%92%AE%E4%B8%8E%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%9E%8D%E5%90%88/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/14/13.Flutter底部导航栏动态生成及浮动按钮与导航栏的融合/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/14/13.Flutter%E5%BA%95%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%8A%A8%E6%80%81%E7%94%9F%E6%88%90%E5%8F%8A%E6%B5%AE%E5%8A%A8%E6%8C%89%E9%92%AE%E4%B8%8E%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%9E%8D%E5%90%88/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/14/13.Flutter底部导航栏动态生成及浮动按钮与导航栏的融合/</id>
     <published>2019-07-14T03:50:01.000Z</published>
     <updated>2019-07-19T08:34:29.835Z</updated>
     
@@ -275,17 +249,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>10.Flutter导航参数传递与接收</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/13/10.Flutter%E5%AF%BC%E8%88%AA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E4%B8%8E%E6%8E%A5%E6%94%B6/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/13/10.Flutter导航参数传递与接收/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/13/10.Flutter%E5%AF%BC%E8%88%AA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E4%B8%8E%E6%8E%A5%E6%94%B6/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/13/10.Flutter导航参数传递与接收/</id>
     <published>2019-07-13T03:50:01.000Z</published>
     <updated>2019-07-19T08:33:06.532Z</updated>
     
@@ -301,17 +275,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>11.Flutter导航参数传递与接收2</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/13/11.Flutter%E5%AF%BC%E8%88%AA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E4%B8%8E%E6%8E%A5%E6%94%B62/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/13/11.Flutter导航参数传递与接收2/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/13/11.Flutter%E5%AF%BC%E8%88%AA%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92%E4%B8%8E%E6%8E%A5%E6%94%B62/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/13/11.Flutter导航参数传递与接收2/</id>
     <published>2019-07-13T03:50:01.000Z</published>
     <updated>2019-07-19T08:33:37.944Z</updated>
     
@@ -327,17 +301,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>12.Flutter底部导航栏和切换效果</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/13/12.Flutter%E5%BA%95%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%92%8C%E5%88%87%E6%8D%A2%E6%95%88%E6%9E%9C/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/13/12.Flutter底部导航栏和切换效果/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/13/12.Flutter%E5%BA%95%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%92%8C%E5%88%87%E6%8D%A2%E6%95%88%E6%9E%9C/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/13/12.Flutter底部导航栏和切换效果/</id>
     <published>2019-07-13T03:50:01.000Z</published>
     <updated>2019-07-19T08:34:02.535Z</updated>
     
@@ -353,17 +327,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>8.Flutter初体验卡片布局</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/12/8.Flutter%E5%88%9D%E4%BD%93%E9%AA%8C%E5%8D%A1%E7%89%87%E5%B8%83%E5%B1%80/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/12/8.Flutter初体验卡片布局/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/12/8.Flutter%E5%88%9D%E4%BD%93%E9%AA%8C%E5%8D%A1%E7%89%87%E5%B8%83%E5%B1%80/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/12/8.Flutter初体验卡片布局/</id>
     <published>2019-07-12T03:50:01.000Z</published>
     <updated>2019-07-19T08:32:08.307Z</updated>
     
@@ -381,17 +355,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>9.Flutter导航组件</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/12/9.Flutter%E5%AF%BC%E8%88%AA%E7%BB%84%E4%BB%B6/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/12/9.Flutter导航组件/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/12/9.Flutter%E5%AF%BC%E8%88%AA%E7%BB%84%E4%BB%B6/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/12/9.Flutter导航组件/</id>
     <published>2019-07-12T03:50:01.000Z</published>
     <updated>2019-07-19T08:32:41.625Z</updated>
     
@@ -409,17 +383,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>3.Flutter初体验ListView组件浅尝</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/09/3.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CListView%E7%BB%84%E4%BB%B6%E6%B5%85%E5%B0%9D/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/09/3.Flutter初体验ListView组件浅尝/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/09/3.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CListView%E7%BB%84%E4%BB%B6%E6%B5%85%E5%B0%9D/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/09/3.Flutter初体验ListView组件浅尝/</id>
     <published>2019-07-09T03:50:01.000Z</published>
     <updated>2019-07-19T08:28:02.222Z</updated>
     
@@ -435,17 +409,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>5.Flutter初体验GridView布局</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/09/5.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CGridView%E5%B8%83%E5%B1%80/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/09/5.Flutter初体验GridView布局/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/09/5.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CGridView%E5%B8%83%E5%B1%80/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/09/5.Flutter初体验GridView布局/</id>
     <published>2019-07-09T03:50:01.000Z</published>
     <updated>2019-07-19T08:30:37.998Z</updated>
     
@@ -461,17 +435,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>4.Flutter初体验ListView动态列表</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/09/4.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CListView%E5%8A%A8%E6%80%81%E5%88%97%E8%A1%A8/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/09/4.Flutter初体验ListView动态列表/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/09/4.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CListView%E5%8A%A8%E6%80%81%E5%88%97%E8%A1%A8/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/09/4.Flutter初体验ListView动态列表/</id>
     <published>2019-07-09T03:50:01.000Z</published>
     <updated>2019-07-19T08:28:54.724Z</updated>
     
@@ -487,17 +461,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>6.Flutter初体验Row及Colume布局</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/09/6.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CRow%E5%8F%8AColume%E5%B8%83%E5%B1%80/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/09/6.Flutter初体验Row及Colume布局/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/09/6.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CRow%E5%8F%8AColume%E5%B8%83%E5%B1%80/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/09/6.Flutter初体验Row及Colume布局/</id>
     <published>2019-07-09T03:50:01.000Z</published>
     <updated>2019-07-19T08:30:49.917Z</updated>
     
@@ -513,17 +487,17 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
   <entry>
     <title>7.Flutter初体验层叠布局</title>
-    <link href="https://hicksalmon.gitee.io/2019/07/09/7.Flutter%E5%88%9D%E4%BD%93%E9%AA%8C%E5%B1%82%E5%8F%A0%E5%B8%83%E5%B1%80/"/>
-    <id>https://hicksalmon.gitee.io/2019/07/09/7.Flutter初体验层叠布局/</id>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/09/7.Flutter%E5%88%9D%E4%BD%93%E9%AA%8C%E5%B1%82%E5%8F%A0%E5%B8%83%E5%B1%80/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/09/7.Flutter初体验层叠布局/</id>
     <published>2019-07-09T03:50:01.000Z</published>
     <updated>2019-07-19T08:31:40.334Z</updated>
     
@@ -541,10 +515,36 @@
     
     </summary>
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/categories/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
     
     
-      <category term="Flutter" scheme="https://hicksalmon.gitee.io/tags/Flutter/"/>
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2.Flutter初体验Text与Image组件浅尝</title>
+    <link href="https://hick-salmon.github.io/Hick-Salmon/2019/07/08/2.Flutter%E5%88%9D%E4%BD%93%E9%AA%8CText%E4%B8%8EImage%E7%BB%84%E4%BB%B6%E6%B5%85%E5%B0%9D/"/>
+    <id>https://hick-salmon.github.io/Hick-Salmon/2019/07/08/2.Flutter初体验Text与Image组件浅尝/</id>
+    <published>2019-07-08T03:50:01.000Z</published>
+    <updated>2019-07-09T13:07:31.504Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><h2 id="Flutter初体验Text与Image组件浅尝"><a href="#Flutter初体验Text与Image组件浅尝" class="headerlink" title="Flutter初体验Text与Image组件浅尝"></a>Flutter初体验Text与Image组件浅尝</h2></blockquote><hr><p><strong>Text 组件</strong>熟悉<strong>textAlign</strong>（对其方式），<strong>maxLines</strong>（最大行数），<strong>overflow</strong>（超过当前这行的怎么处理显示），<strong>style</strong>（对字体的属性进行设置，包括（<strong>字体大小，颜色，下划线，下划线的属性</strong>等等，可具体查阅相关文档进行使用））。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">          <span class="comment">//比如新闻列表就可能经常用这个，这个主要是文本的对齐方式</span></span><br><span class="line">          <span class="comment">//主要是对 Text 属性的使用</span></span><br><span class="line">          child: Text(</span><br><span class="line">            <span class="string">'床前明月光，疑是地上霜。举头望明月，低头思故乡。'</span>,</span><br><span class="line">            textAlign: TextAlign.left,</span><br><span class="line">            maxLines: <span class="number">1</span>,</span><br><span class="line">            overflow: TextOverflow.ellipsis,</span><br><span class="line">            style: TextStyle(</span><br><span class="line">              fontSize: <span class="number">24</span>,</span><br><span class="line">              color: Color.fromARGB(<span class="number">255</span>, <span class="number">255</span>, <span class="number">125</span>, <span class="number">125</span>),</span><br><span class="line">              decoration: TextDecoration.underline,</span><br><span class="line">              decorationStyle: TextDecorationStyle.solid,</span><br><span class="line">            ),</span><br><span class="line">          ), </span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><hr><p>当然 Text 属性还有很多，如下面的 <strong>alignment</strong>（主要是显示的位置），<strong>padding</strong>（内边距），<strong>margin</strong>（外边距），<strong>decoration</strong>（以及很强大的装饰属性，这个可以实现渐变的效果，其自身相关属性也可以查阅相关文档）。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">'Hello Widget'</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        body: Center(</span><br><span class="line">          child: Container(</span><br><span class="line">            child: Text(</span><br><span class="line">              <span class="string">'HickSalmon'</span>,</span><br><span class="line">              style: TextStyle(</span><br><span class="line">              fontSize: <span class="number">40.0</span>,</span><br><span class="line">              <span class="comment">// color: Color.fromARGB(255, 255, 0, 0),</span></span><br><span class="line">              ),),</span><br><span class="line">              <span class="comment">// alignment: Alignment.bottomRight,</span></span><br><span class="line">              alignment: Alignment.topLeft,</span><br><span class="line">              width: <span class="number">400</span>,</span><br><span class="line">              height: <span class="number">300</span>,</span><br><span class="line">              <span class="comment">// color: Colors.lightBlue,</span></span><br><span class="line">              padding: <span class="keyword">const</span> EdgeInsets.fromLTRB(<span class="number">10</span>, <span class="number">20</span>, <span class="number">0</span>, <span class="number">0</span>),</span><br><span class="line">              margin: <span class="keyword">const</span> EdgeInsets.all(<span class="number">10</span>),</span><br><span class="line">              decoration: <span class="keyword">new</span> BoxDecoration(</span><br><span class="line">                gradient: <span class="function"><span class="keyword">const</span> <span class="title">LinearGradient</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">                  colors: [Colors.lightBlue,Colors.green,Colors.purple],</span></span></span><br><span class="line"><span class="function"><span class="params">                )</span>,</span></span><br><span class="line"><span class="function">                border: Border.<span class="title">all</span><span class="params">(width: <span class="number">10</span>,color:Colors.red )</span>,</span></span><br><span class="line"><span class="function">              ),</span></span><br><span class="line"><span class="function">          ),</span></span><br><span class="line"><span class="function">        ),</span></span><br><span class="line"><span class="function">      ),</span></span><br><span class="line"><span class="function">    )</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><hr><p>最后是对 Image 组件的尝试，图片的加载方式很多，最常用的就是 Image.network() ，加载网络图片（这里当时自己测试的时候网了给网址加引号，一直报错我都懵了。2333。。。。），以及对图片的相关处理。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'package:flutter/material.dart'</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>=&gt; runApp(MyApp());</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyApp</span> <span class="keyword">extends</span> <span class="title">StatelessWidget</span></span>&#123;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="function">Widget <span class="title">build</span><span class="params">(BuildContext context)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      title: <span class="string">"图片加载"</span>,</span><br><span class="line">      home: Scaffold(</span><br><span class="line">        body: Center(</span><br><span class="line">          child: Container(</span><br><span class="line">            <span class="comment">//Image.network() 使用网络的图片，开发常用的方式</span></span><br><span class="line">            child: <span class="keyword">new</span> Image.network(</span><br><span class="line">              <span class="string">'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=655260795,2787721540&amp;fm=27&amp;gp=0.jpg'</span>,</span><br><span class="line">              <span class="comment">//fit属性就是填充的方式，可以 BoxFit.fill （根据容器拉满可能变形） BoxFit.Width（根据水平的拉满） </span></span><br><span class="line">              <span class="comment">// BoxFit.Height（按高度拉满） BoxFit.contain （按照图片的大小拉满，不改变图片的宽高比）</span></span><br><span class="line">              <span class="comment">// fit: BoxFit.fitWidth,</span></span><br><span class="line">              <span class="comment">// fit: BoxFit.fitHeight,</span></span><br><span class="line">              <span class="comment">// fit: BoxFit.contain,</span></span><br><span class="line">              fit: BoxFit.fill,</span><br><span class="line">              color: Colors.green,</span><br><span class="line">              <span class="comment">//混合属性</span></span><br><span class="line">              colorBlendMode: BlendMode.darken,</span><br><span class="line">              <span class="comment">//重复属性</span></span><br><span class="line">              <span class="comment">// repeat: ImageRepeat.repeat,</span></span><br><span class="line">            ),</span><br><span class="line">            width: <span class="number">300</span>,</span><br><span class="line">            height: <span class="number">200</span>,</span><br><span class="line">            color: Colors.lightBlue,</span><br><span class="line">          ),</span><br><span class="line">        ),</span><br><span class="line">      ),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><hr><p>最后是对之前的多余操作进行一个补充，昨天学习的利用批处理文件启动虚拟机，显得有点多余，实际在 VS Code 中，在安装完 Flutter 与 Dart 插件之后，在 IDE 的右下角点击那个 No device 就可以自己添加虚拟机或者创建相关的虚拟机了。</p><p> <strong>2019/7/8：</strong>今天没什么感想，但是为了这里有句话，我就写这个。还有今天写完这个总结已经11点了。握草！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;h2 id=&quot;Flutter初体验Text与Image组件浅尝&quot;&gt;&lt;a href=&quot;#Flutter初体验Text与Image组件浅尝&quot; class=&quot;headerlink&quot; title=&quot;Flutter初体验Text与Image组件浅尝&quot;&gt;&lt;/a&gt;F
+      
+    
+    </summary>
+    
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/categories/Flutter/"/>
+    
+    
+      <category term="Flutter" scheme="https://hick-salmon.github.io/Hick-Salmon/tags/Flutter/"/>
     
   </entry>
   
